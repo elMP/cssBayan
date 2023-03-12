@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  display: none;
+}
+
 .bayan__item + .bayan .bayan__content {
   display: none;
 }
@@ -6,6 +30,20 @@
   display: block;
 }
 
-.bayan:hover .bayan__content {
-  display: block;
+.bayan__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
+  border-top: 0.2rem solid lightgray;
+}
+
+.bayan__content {
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width: 821px) {
+  .bayan:hover .bayan__content {
+    display: block;
+  }
 }
