@@ -30,12 +30,31 @@ input {
   display: block;
 }
 
+.arrow {
+  transition: transform 2s;
+}
+
+.bayan__item:checked + .bayan .arrow {
+  transform: rotate(180deg);
+}
+
 .bayan__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: 0.3rem;
   padding-top: 0.3rem;
   border-top: 0.2rem solid lightgray;
+}
+
+.bayan__title h3 {
+  font-weight: 500;
+}
+
+.bayan__title img {
+  width: 5%;
 }
 
 .bayan__content {
