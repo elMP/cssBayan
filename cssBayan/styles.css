@@ -1,0 +1,11 @@
+.bayan__item + .bayan .bayan__content {
+  display: none;
+}
+
+.bayan__item:checked + .bayan .bayan__content {
+  display: block;
+}
+
+.bayan:hover .bayan__content {
+  display: block;
+}
